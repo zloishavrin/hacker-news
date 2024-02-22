@@ -1,0 +1,165 @@
+
+.element {
+    grid-column: span 1;
+    grid-row: span 1;
+    width: 14vw;
+    background: var(--main-bg-color);
+    border: 0px;
+    border-bottom: 0.1vw;
+    border-color: var(--extra-color);
+    border-style: solid;
+    font-size: 0.5vw;
+    padding-bottom: 0.5vw;
+    font-weight: 300;
+    cursor: pointer;
+    display: grid;
+    align-content: space-between;
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+
+.element:nth-child(1) {
+    grid-column: span 2;
+    grid-row: span 2;
+    width: 28vw;
+    font-size: 1.75vw;
+}
+
+.element:nth-child(2), .element:nth-child(3)  {
+    grid-column: span 2;
+    grid-row: span 1;
+    width: 28vw;
+    font-size: 0.75vw;
+}
+
+.element:nth-child(12n) {
+    grid-column: span 2;
+    grid-row: span 1;
+    width: 28vw;
+    font-size: 0.75vw;
+}
+
+.element:nth-child(21n) {
+    grid-column: span 2;
+    grid-row: span 2;
+    width: 28vw;
+    font-size: 1.75vw;
+}
+
+.element h1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+    box-orient: vertical;
+    transition: all 0.2s ease-out;
+}
+
+.element:hover h1 {
+    color: var(--accent-color);
+}
+
+.rating {
+    margin-top: 0.8vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1vw;
+}
+
+.rating svg {
+    width: 1vw;
+    height: 1vw;
+    margin-right: 0.25vw;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+}
+
+.info p {
+    padding-right: 0.75vw;
+    max-width: 50%;
+    overflow-x: hidden;
+    font-size: 0.75vw;
+    font-weight: 500;
+}
+
+.info p:last-of-type {
+    color: var(--extra-color);
+    font-weight: 400;
+}
+
+@media (max-width: 1000px) {
+    .element {
+        width: 95vw;
+        display: flex;
+        flex-direction: column;
+        font-size: 5vw;
+        padding: 10vw 0vw;
+    }
+
+    .element:nth-child(1) {
+        width: 95vw;
+        display: flex;
+        flex-direction: column;
+        font-size: 5vw;
+        padding: 10vw 0vw;
+    }
+
+    .element:nth-child(2), .element:nth-child(3)  {
+        width: 95vw;
+        display: flex;
+        flex-direction: column;
+        font-size: 5vw;
+        padding: 10vw 0vw;
+    }
+
+    .element:nth-child(12n) {
+        width: 95vw;
+        display: flex;
+        flex-direction: column;
+        font-size: 5vw;
+        padding: 10vw 0vw;
+    }
+
+    .element:nth-child(21n) {
+        width: 95vw;
+        display: flex;
+        flex-direction: column;
+        font-size: 5vw;
+        padding: 10vw 0vw;
+    }
+
+    .rating {
+        margin-top: 3vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 5vw;
+    }
+
+    .rating svg {
+        width: 5vw;
+        height: 5vw;
+        margin-right: 2vw;
+    }
+
+    .info p {
+        padding-right: 2vw;
+        max-width: 50%;
+        overflow-x: hidden;
+        font-size: 5vw;
+        font-weight: 500;
+    }
+
+    .info p:last-of-type {
+        color: var(--extra-color);
+        font-weight: 400;
+    }
+}

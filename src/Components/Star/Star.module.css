@@ -1,0 +1,7 @@
+.active {
+    fill: var(--accent-color);
+}
+
+.nonActive {
+    fill: var(--extra-color);
+}

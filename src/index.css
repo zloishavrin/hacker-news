@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+:root {
+  --main-bg-color: white;
+  --second-bg-color: black;
+  --main-text-color: black;
+  --second-text-color: white;
+  --extra-color: gray;
+  --extra-light-color: rgba(174, 174, 174, 0.15);
+  --accent-color: #e34234;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
